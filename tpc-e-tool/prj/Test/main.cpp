@@ -14,9 +14,9 @@ using namespace std;
 int main()
 {
 	// dft.iConfiguredCustomerCount = 5000;    // iDefaultLoadUnitSize
-    // dft.iActiveCustomerCount = 5000;        // iDefaultLoadUnitSize
-    // dft.iScaleFactor = 500;                 // iScaleFactor
-    // dft.iDaysOfInitialTrades = 300;         // iDaysOfInitialTrades
+	// dft.iActiveCustomerCount = 5000;        // iDefaultLoadUnitSize
+	// dft.iScaleFactor = 500;                 // iScaleFactor
+	// dft.iDaysOfInitialTrades = 300;         // iDaysOfInitialTrades
 
 	/*
 	CCE::CCE( CCESUTInterface *pSUT, CBaseLogger *pLogger, const DataFileManager &dfm,
@@ -24,11 +24,11 @@ int main()
         INT32 iScaleFactor, INT32 iDaysOfInitialTrades,
         UINT32 UniqueId,
         const PDriverCETxnSettings pDriverCETxnSettings 
-						   */
+	*/
 	
 	string dataEnumerationsDir("flat_in");
 
-	// Intermal dependencies for the SUT (System Under Test) implementation classes
+	// Internal dependencies for the SUT (System Under Test) implementation classes
 	CLogFormatTab fmt;
 	CEGenLogger logger(eDriverEGenLoader, 0, "txn-generation.log", &fmt);
 	DataFileManager dfm(dataEnumerationsDir);
